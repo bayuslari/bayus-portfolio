@@ -4,16 +4,14 @@ import NavMenu from "./components/layout/NavMenu";
 import NotFound from "./components/pages/NotFound";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
-import "./App.css";
 
 const App = () => {
   return (
     <Router>
-      <div className='App'>
-        <NavMenu />
+      <div className='app'>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/About' component={About} />
+          {/* <Route exact path='/About' component={About} /> */}
           <Route component={NotFound} />
         </Switch>
       </div>

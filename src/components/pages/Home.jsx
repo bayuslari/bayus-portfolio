@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "../layout/Hero";
-import Footer from "../layout/Footer";
+import Sidebar from "../layout/Sidebar";
+import Main from "../layout/Main";
 const Home = () => (
   <>
-    <Hero />
-    <Footer/>
+    <Sidebar/>
+    <Main/>
   </>
 );
 

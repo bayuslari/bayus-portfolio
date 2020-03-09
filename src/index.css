@@ -1,8 +1,21 @@
+@font-face {
+    font-family: 'Brandon-Reg';
+    src: local('Brandon'), url(./fonts/brandon/brandon_reg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Brandon-Med';
+    src: local('Brandon'), url(./fonts/brandon/brandon_med.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Brandon-Bold';
+    src: local('Brandon'), url(./fonts/brandon/brandon_bld.ttf) format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Brandon-Reg', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +23,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
+}
+
+html {
+  scroll-behavior: smooth;
 }
